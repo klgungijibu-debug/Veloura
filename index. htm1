@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Veloura | عالم الصداقة</title>
+<style>
+:root {
+  --blue: #71869b;
+  --dark-blue: #35495e;
+  --light-blue: #e7edf2;
+  --pink: #f0dce3;
+  --white: #fffdfb;
+}
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  font-family: Tahoma, Arial, sans-serif;
+  background: var(--white);
+  color: var(--dark-blue);
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  border-bottom: 1px solid #e6e8eb;
+}
+.logo {
+  font-family: Georgia, serif;
+  font-size: 27px;
+  font-weight: bold;
+  color: var(--dark-blue);
+  direction: ltr;
+}
+.logo span {
+  color: var(--blue);
+}
+.menu {
+  font-size: 14px;
+  color: var(--blue);
+}
+.hero {
+  text-align: center;
+  padding: 55px 20px 45px;
+  background: linear-gradient(160deg, #edf1f5, #fffdfb 70%);
+}
+.swan {
+  font-size: 74px;
+  margin-bottom: 8px;
+}
+.eyebrow {
+  color: var(--blue);
+  font-size: 12px;
+  letter-spacing: 3px;
+}
+h1 {
+  font-family: Georgia, serif;
+  font-size: 39px;
+  margin: 12px 0;
+  direction: ltr;
+}
+.subtitle {
+  font-size: 17px;
+  margin: 15px 0;
+}
+.description {
+  color: #78828d;
+  line-height: 1.9;
+  font-size: 14px;
+  max-width: 340px;
+  margin: 0 auto 25px;
+}
+button {
+  font-family: inherit;
+  cursor: pointer;
+}
+.main-button {
+  background: var(--dark-blue);
+  color: white;
+  border: none;
+  border-radius: 30px;
+  padding: 15px 28px;
+  font-size: 15px;
+  box-shadow: 0 5px 15px #35495e22;
+}
+.main-button:active {
+  transform: scale(.98);
+}
+.section {
+  padding: 35px 20px;
+  max-width: 650px;
+  margin: auto;
+}
+.section-title {
+  text-align: center;
+  font-size: 22px;
+  margin-bottom: 8px;
+}
+.section-note {
+  text-align: center;
+  color: #89919a;
+  font-size: 13px;
+  margin-bottom: 25px;
+}
+.card {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 18px;
+  margin-bottom: 13px;
+  border: 1px solid #e5e9ed;
+  border-radius: 18px;
+  background: white;
+}
+.card-icon {
+  background: var(--light-blue);
+  width: 48px;
+  height: 48px;
+  flex-shrink: 0;
+  border-radius: 15px;
+  display: grid;
+  place-items: center;
+  font-size: 24px;
+}
+.card h3 {
+  font-size: 15px;
+  margin: 0 0 7px;
+}
+.card p {
+  color: #8b939b;
+  font-size: 12px;
+  margin: 0;
+}
+.card-arrow {
+  margin-right: auto;
+  color: var(--blue);
+  font-size: 22px;
+}
+.create-box {
+  background: #edf1f5;
+  border-radius: 22px;
+  padding: 25px 20px;
+  text-align: center;
+}
+.create-box .swan {
+  font-size: 42px;
+}
+.create-box h2 {
+  font-size: 20px;
+}
+.create-box p {
+  color: #697887;
+  font-size: 13px;
+  line-height: 1.8;
+}
+.secondary-button {
+  background: white;
+  border: 1px solid #cdd7e0;
+  color: var(--dark-blue);
+  padding: 12px 22px;
+  border-radius: 25px;
+  font-size: 14px;
+}
+footer {
+  text-align: center;
+  padding: 25px 15px;
+  background: #e7edf2;
+  color: #697887;
+  font-size: 12px;
+  line-height: 2;
+}
+footer strong {
+  font-family: Georgia, serif;
+  direction: ltr;
+  display: inline-block;
+}
+@media (min-width: 600px) {
+  .hero { padding: 70px 20px; }
+  h1 { font-size: 48px; }
+}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="logo">Veloura<span>.</span></div>
+  <div class="menu">عالم الصداقة ♡</div>
+</header>
+
+<main>
+  <section class="hero">
+    <div class="swan">🦢</div>
+    <div class="eyebrow">A LITTLE WORLD OF FRIENDSHIP</div>
+    <h1>Veloura</h1>
+    <div class="subtitle">بعض الصداقات تستحق أن نعرف عنها أكثر.</div>
+    <p class="description">
+      مساحة صغيرة تجمع الذكريات والأسئلة والتفاصيل
+      التي تجعل كل صداقة مختلفة عن الأخرى.
+    </p>
+    <button class="main-button"
+      onclick="document.getElementById('quizzes').scrollIntoView({behavior:'smooth'})">
+      اكتشفي اختبارات الصداقة ♡
+    </button>
+  </section>
+
+  <section class="section" id="quizzes">
+    <h2 class="section-title">اختاري اختبارك</h2>
+    <p class="section-note">كل سؤال حكاية صغيرة بين الأصدقاء.</p>
+
+    <div class="card">
+      <div class="card-icon">💌</div>
+      <div>
+        <h3>مين يعرفني أكتر؟</h3>
+        <p>اختبري مدى معرفة أصدقائك بكِ.</p>
+      </div>
+      <div class="card-arrow">←</div>
+    </div>
+
+    <div class="card">
+      <div class="card-icon">🦢</div>
+      <div>
+        <h3>قد إيه إحنا قريبين؟</h3>
+        <p>أسئلة عن الذكريات والتفاصيل المشتركة.</p>
+      </div>
+      <div class="card-arrow">←</div>
+    </div>
+
+    <div class="card">
+      <div class="card-icon">🎀</div>
+      <div>
+        <h3>اختبار الصداقة الممتع</h3>
+        <p>أسئلة خفيفة ومواقف غير متوقعة.</p>
+      </div>
+      <div class="card-arrow">←</div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="create-box">
+      <div class="swan">🦢</div>
+      <h2>اصنعي اختبارك الخاص</h2>
+      <p>
+        قريبًا، ستتمكنين من إعداد أسئلتك الخاصة
+        ومشاركة اختبارك مع أصدقائك.
+      </p>
+      <button class="secondary-button"
+        onclick="alert('ميزة إنشاء الاختبارات سنضيفها في الخطوة التالية ♡')">
+        قريبًا بإذن الله ♡
+      </button>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <strong>Veloura</strong> · صُنع بحب ♡
+  <br>
+  لكل صداقة حكاية تستحق أن تُروى.
+</footer>
+
+</body>
+</html>
